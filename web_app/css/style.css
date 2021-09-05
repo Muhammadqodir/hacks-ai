@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .slidecontainer {
   width: 100%; /* Width of the outside container */
   margin: auto;
@@ -8,7 +13,7 @@
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
+  height: 10px; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -41,30 +46,88 @@
   cursor: pointer; /* Cursor on hover */
   transition: .5s;
 }
+
+.header{
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 70px;
+  background-color: #ffff;
+}
+
+.header_cont{
+  
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.header_title h1{
+  position: absolute;
+
+  padding-top:20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  font-weight: 550;
+  padding-top: 6px;
+  font-size: 35px;
+}
+
+.header_title .fire{
+  font-weight: 550;
+  color: rgb(202, 38, 38);
+}
+.header_title .beta{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.logo{
+  display: inline;
+  width:55px ;
+  height:55px ;
+}
+
 .container-fluid{
   float: right;
 }
 .col{
+  font-family: Arial, Helvetica, sans-serif;
   padding-top: 10px;
   text-align: center;
   border-left: solid 1px;
   background-color: #cccccc99;
 }
 .col:hover{
-  padding-top: 10px;
+  padding-top:8px;
   text-align: center;
   border-left: solid 1px;
   cursor: pointer;
-  transition: .5s;
+  transition: .3s;
+  background-color: #ffffff;
   opacity: 1;
 }
 .col:not(:hover){
-  padding-top: 10px;
   text-align: center;
   opacity: .4;
   border-left: solid 1px;
   transition: .5s;
 }
+.col:active{
+  
+  padding-top: 10px;
+  text-align: center;
+  /* border-left: solid 1px; */
+  cursor: pointer;
+  transition: .5s;
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
     margin-top: 0px;
     margin-bottom: 0;
@@ -73,4 +136,10 @@
 }
 span{
   font-weight: 100;
+}
+
+
+h4:hover{
+  font-size: 27px;
+  transition: 0.4s;
 }

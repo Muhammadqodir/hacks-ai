@@ -14,8 +14,25 @@
             width: 100%; height: 100%; padding: 0; margin: 0;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="header_cont">
+            
+             <div class="header_title">
+                    <h1>
+                        <span class="logo"><img src="media/logo512.png" class="logo" alt=""></span>
+                        Wild<span class="fire">Fire</span>  
+                        Simulator<span class="beta"> (Beta)</span>
+                     </h1>
+             </div>         
+       </div> 
+    </header>
 
     <div style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 80px;" id="map"></div>
     <div style="position: fixed; bottom: 0px; height: 80px; left: 0px; right: 0px; background-color: #ccc;" class="timeline">
@@ -26,32 +43,32 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-            <h4>4<br>
+            <h4>5<br>
                 <span>сентябрь</span></h4>
         </div>
         <div class="col" onclick="myMap.geoObjects.add(polygons[1]);">
-            <h4>5<br>
+            <h4>6<br>
             <span>сентябрь</span></h4>
 
         </div>
         <div class="col" onclick="myMap.geoObjects.add(polygons[2]);">
-            <h4>6<br>
+            <h4>7<br>
                 <span>сентябрь</span></h4>
 
         </div>
         <div class="col" onclick="myMap.geoObjects.add(polygons[3]);">
-            <h4>7<br>
+            <h4>8<br>
                 <span>сентябрь</span></h4>
         </div>
         <div class="col" onclick="myMap.geoObjects.add(polygons[4]);">
-            <h4>8<br>
+            <h4>9<br>
                 <span>сентябрь</span></h4>
         </div>
     </div>    
 </div>
 
-</div>
 
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script type="text/javascript" src="polygons_generator.js"></script>
