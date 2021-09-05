@@ -1,3 +1,3 @@
-import requests as rq
-response = rq.get("https://www.gismeteo.ru/diary/206418/2015/10/")
-print(response)
+import parser
+
+print(parser.getWeather(136.80700409, 49.93432764, 2015, 10, 4))

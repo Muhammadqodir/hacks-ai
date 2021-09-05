@@ -1,0 +1,76 @@
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  margin: auto;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  transition: .5s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  transition: .5s;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 60px; /* Set a specific slider handle width */
+  height: 60px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  transition: .5s;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  transition: .5s;
+}
+.container-fluid{
+  float: right;
+}
+.col{
+  padding-top: 10px;
+  text-align: center;
+  border-left: solid 1px;
+  background-color: #cccccc99;
+}
+.col:hover{
+  padding-top: 10px;
+  text-align: center;
+  border-left: solid 1px;
+  cursor: pointer;
+  transition: .5s;
+  opacity: 1;
+}
+.col:not(:hover){
+  padding-top: 10px;
+  text-align: center;
+  opacity: .4;
+  border-left: solid 1px;
+  transition: .5s;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+span{
+  font-weight: 100;
+}
